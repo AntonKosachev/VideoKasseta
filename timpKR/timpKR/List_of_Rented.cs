@@ -1,0 +1,50 @@
+﻿using System;
+using System.IO;
+using System.Windows.Forms;
+
+namespace timpKR
+{
+    public partial class List_of_Rented : Form
+    {
+        public List_of_Rented()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Form1 back = new Form1();
+            back.ShowDialog();
+            Close();
+        }
+
+        private void List_of_Rented_Load(object sender, EventArgs e)
+        {
+            if (!File.Exists(DataBank.pathR))
+            {
+                MessageBox.Show("Сейчас арендованных кассет нет");
+                Hide();
+                Form1 back = new Form1();
+                back.ShowDialog();
+                Close();
+            }
+            else
+            {
+                string[] rented = File.ReadAllLines(DataBank.pathR);
+                int sch = 0;
+                for (int i = 0; i < (rented.Length / 5); i++)
+                {
+                    label1.Text += rented[sch].ToString() + "\n";
+                    sch++;
+                    label2.Text += rented[sch].ToString() + "\n";
+                    sch++;
+                    label3.Text += rented[sch].ToString() + "\n";
+                    sch+=2;
+                    label8.Text += rented[sch].ToString() + "\n";
+                    sch++;
+                }
+            }
+        }
+    }
+}

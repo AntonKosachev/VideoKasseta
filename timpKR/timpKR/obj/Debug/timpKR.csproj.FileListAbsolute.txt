@@ -1,0 +1,70 @@
+C:\Users\tikai\source\repos\timpKR\timpKR\bin\Debug\timpKR.exe.config
+C:\Users\tikai\source\repos\timpKR\timpKR\bin\Debug\timpKR.exe
+C:\Users\tikai\source\repos\timpKR\timpKR\bin\Debug\timpKR.pdb
+C:\Users\tikai\source\repos\timpKR\timpKR\obj\Debug\timpKR.csprojAssemblyReference.cache
+C:\Users\tikai\source\repos\timpKR\timpKR\obj\Debug\timpKR.Form1.resources
+C:\Users\tikai\source\repos\timpKR\timpKR\obj\Debug\timpKR.Properties.Resources.resources
+C:\Users\tikai\source\repos\timpKR\timpKR\obj\Debug\timpKR.csproj.GenerateResource.cache
+C:\Users\tikai\source\repos\timpKR\timpKR\obj\Debug\timpKR.exe
+C:\Users\tikai\source\repos\timpKR\timpKR\obj\Debug\timpKR.pdb
+C:\Users\tikai\source\repos\timpKR\timpKR\obj\Debug\timpKR.AddKass.resources
+C:\Users\tikai\source\repos\timpKR\timpKR\obj\Debug\timpKR.Catalog.resources
+C:\Users\tikai\source\repos\timpKR\timpKR\obj\Debug\timpKR.CheckExist.resources
+C:\Users\tikai\source\repos\timpKR\timpKR\obj\Debug\timpKR.RentOut.resources
+C:\Users\tikai\source\repos\timpKR\timpKR\obj\Debug\timpKR.AddClient.resources
+C:\Users\tikai\source\repos\timpKR\timpKR\obj\Debug\timpKR.Client_information.resources
+C:\Users\tikai\source\repos\timpKR\timpKR\obj\Debug\timpKR.List_of_Rented.resources
+C:\Users\tikai\source\repos\timpKR\timpKR\obj\Debug\timpKR.List_of_clients.resources
+C:\Users\tikai\source\repos\timpKR\timpKR\obj\Debug\timpKR.List_of_requests.resources
+C:\Users\tikai\source\repos\timpKR\timpKR\obj\Debug\timpKR.Add_Request.resources
+C:\Users\tikai\source\repos\timpKR\timpKR\obj\Debug\timpKR.Change_Client_Info.resources
+C:\Users\tikai\source\repos\timpKR\timpKR\obj\Debug\timpKR.Rent_in.resources
+C:\Users\tikai\source\repos\timpKR\timpKR\obj\Debug\timpKR.RentOutNew.resources
+C:\Users\tikai\source\repos\timpKR\timpKR\obj\Debug\timpKR.Change_Kass_Info.resources
+D:\мое\учеба\программирование\repos\timpKR\timpKR\bin\Debug\timpKR.exe.config
+D:\мое\учеба\программирование\repos\timpKR\timpKR\bin\Debug\timpKR.exe
+D:\мое\учеба\программирование\repos\timpKR\timpKR\bin\Debug\timpKR.pdb
+D:\мое\учеба\программирование\repos\timpKR\timpKR\obj\Debug\timpKR.csprojAssemblyReference.cache
+D:\мое\учеба\программирование\repos\timpKR\timpKR\obj\Debug\timpKR.AddClient.resources
+D:\мое\учеба\программирование\repos\timpKR\timpKR\obj\Debug\timpKR.AddKass.resources
+D:\мое\учеба\программирование\repos\timpKR\timpKR\obj\Debug\timpKR.Add_Request.resources
+D:\мое\учеба\программирование\repos\timpKR\timpKR\obj\Debug\timpKR.Catalog.resources
+D:\мое\учеба\программирование\repos\timpKR\timpKR\obj\Debug\timpKR.Change_Client_Info.resources
+D:\мое\учеба\программирование\repos\timpKR\timpKR\obj\Debug\timpKR.Change_Kass_Info.resources
+D:\мое\учеба\программирование\repos\timpKR\timpKR\obj\Debug\timpKR.CheckExist.resources
+D:\мое\учеба\программирование\repos\timpKR\timpKR\obj\Debug\timpKR.Client_information.resources
+D:\мое\учеба\программирование\repos\timpKR\timpKR\obj\Debug\timpKR.Form1.resources
+D:\мое\учеба\программирование\repos\timpKR\timpKR\obj\Debug\timpKR.List_of_clients.resources
+D:\мое\учеба\программирование\repos\timpKR\timpKR\obj\Debug\timpKR.List_of_Rented.resources
+D:\мое\учеба\программирование\repos\timpKR\timpKR\obj\Debug\timpKR.List_of_requests.resources
+D:\мое\учеба\программирование\repos\timpKR\timpKR\obj\Debug\timpKR.Properties.Resources.resources
+D:\мое\учеба\программирование\repos\timpKR\timpKR\obj\Debug\timpKR.RentOut.resources
+D:\мое\учеба\программирование\repos\timpKR\timpKR\obj\Debug\timpKR.RentOutNew.resources
+D:\мое\учеба\программирование\repos\timpKR\timpKR\obj\Debug\timpKR.Rent_in.resources
+D:\мое\учеба\программирование\repos\timpKR\timpKR\obj\Debug\timpKR.csproj.GenerateResource.cache
+D:\мое\учеба\программирование\repos\timpKR\timpKR\obj\Debug\timpKR.csproj.CoreCompileInputs.cache
+D:\мое\учеба\программирование\repos\timpKR\timpKR\obj\Debug\timpKR.exe
+D:\мое\учеба\программирование\repos\timpKR\timpKR\obj\Debug\timpKR.pdb
+C:\Users\meshk\Desktop\курсовая Антон\timpKR\timpKR\bin\Debug\timpKR.exe.config
+C:\Users\meshk\Desktop\курсовая Антон\timpKR\timpKR\bin\Debug\timpKR.exe
+C:\Users\meshk\Desktop\курсовая Антон\timpKR\timpKR\bin\Debug\timpKR.pdb
+C:\Users\meshk\Desktop\курсовая Антон\timpKR\timpKR\obj\Debug\timpKR.csprojAssemblyReference.cache
+C:\Users\meshk\Desktop\курсовая Антон\timpKR\timpKR\obj\Debug\timpKR.AddClient.resources
+C:\Users\meshk\Desktop\курсовая Антон\timpKR\timpKR\obj\Debug\timpKR.AddKass.resources
+C:\Users\meshk\Desktop\курсовая Антон\timpKR\timpKR\obj\Debug\timpKR.Add_Request.resources
+C:\Users\meshk\Desktop\курсовая Антон\timpKR\timpKR\obj\Debug\timpKR.Catalog.resources
+C:\Users\meshk\Desktop\курсовая Антон\timpKR\timpKR\obj\Debug\timpKR.Change_Client_Info.resources
+C:\Users\meshk\Desktop\курсовая Антон\timpKR\timpKR\obj\Debug\timpKR.Change_Kass_Info.resources
+C:\Users\meshk\Desktop\курсовая Антон\timpKR\timpKR\obj\Debug\timpKR.CheckExist.resources
+C:\Users\meshk\Desktop\курсовая Антон\timpKR\timpKR\obj\Debug\timpKR.Client_information.resources
+C:\Users\meshk\Desktop\курсовая Антон\timpKR\timpKR\obj\Debug\timpKR.Form1.resources
+C:\Users\meshk\Desktop\курсовая Антон\timpKR\timpKR\obj\Debug\timpKR.List_of_clients.resources
+C:\Users\meshk\Desktop\курсовая Антон\timpKR\timpKR\obj\Debug\timpKR.List_of_Rented.resources
+C:\Users\meshk\Desktop\курсовая Антон\timpKR\timpKR\obj\Debug\timpKR.List_of_requests.resources
+C:\Users\meshk\Desktop\курсовая Антон\timpKR\timpKR\obj\Debug\timpKR.Properties.Resources.resources
+C:\Users\meshk\Desktop\курсовая Антон\timpKR\timpKR\obj\Debug\timpKR.RentOutNew.resources
+C:\Users\meshk\Desktop\курсовая Антон\timpKR\timpKR\obj\Debug\timpKR.Rent_in.resources
+C:\Users\meshk\Desktop\курсовая Антон\timpKR\timpKR\obj\Debug\timpKR.csproj.GenerateResource.cache
+C:\Users\meshk\Desktop\курсовая Антон\timpKR\timpKR\obj\Debug\timpKR.csproj.CoreCompileInputs.cache
+C:\Users\meshk\Desktop\курсовая Антон\timpKR\timpKR\obj\Debug\timpKR.exe
+C:\Users\meshk\Desktop\курсовая Антон\timpKR\timpKR\obj\Debug\timpKR.pdb

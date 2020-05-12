@@ -1,0 +1,142 @@
+using System;
+using System.IO;
+using System.Data;
+using System.Linq;
+using System.Windows.Forms;
+
+namespace timpKR
+{
+    public partial class Rent_in : Form
+    {
+        public Rent_in()
+        {
+            InitializeComponent();
+        }
+
+        public void getMainMenu()
+        {
+            Hide();
+            Form1 back = new Form1();
+            back.ShowDialog();
+            Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked || radioButton2.Checked)
+            {
+                if (richTextBox1.Text.Trim() == string.Empty || richTextBox2.Text.Trim() == string.Empty) MessageBox.Show("Обязательно заполните все поля!");
+
+                else if (File.Exists(DataBank.pathK) && File.Exists(DataBank.pathC))
+                {
+                    int schR = 0;  //сдавали ли вообще такую кассету именно этому клиенту?                    
+                    string[] txt = File.ReadAllLines(DataBank.pathR);
+                    int ir = 0;  //индекс сданной в прокат кассеты
+                    var indexes = txt.Select((a, i) => (a, i)).Where(x => x.a == richTextBox1.Text).Select(x => x.i).ToArray();
+                    foreach (int s in indexes)
+                    {
+                        if (txt[s] == richTextBox1.Text && txt[s + 1] == richTextBox2.Text)
+                        {
+                            schR++;
+                            ir = s;
+                        }
+                    }
+                    if (schR == 0)
+                    {
+                        MessageBox.Show("Такой клиент такую кассету в прокат брал!");
+                    }
+
+                    else
+                    {                        
+                        string[] clients = File.ReadAllLines(DataBank.pathC);
+                        string[] kassets = File.ReadAllLines(DataBank.pathK);
+                        int days = Convert.ToInt32(txt[ir + 3]);
+                        int price = DataBank.find_Price(richTextBox1.Text);
+                        int uses = Convert.ToInt32(clients[Array.IndexOf(clients, richTextBox2.Text) + 2]);  //сколько раз клиент пользовался прокатом
+
+                        File.Delete(DataBank.pathR);   //удаление кассеты из списка арендованных
+                        for (int i = 0; i < txt.Length; i++)
+                        {
+                            if ((i != ir) && (i != ir + 1) && (i != ir + 2) && (i != ir + 3) && (i != ir + 4))
+                            {
+                                using (StreamWriter stream = new StreamWriter(DataBank.pathR, true))
+                                {
+                                    stream.WriteLine(txt[i]);
+                                }
+                            }
+                        }
+
+                        if (radioButton1.Checked)
+                        {
+                            kassets[ir + 2] = (Convert.ToInt32(kassets[ir + 2]) + 1).ToString();  //увеличение количества таких кассет в калатоге на 1
+                            File.Delete(DataBank.pathK);
+                            for (int i = 0; i < kassets.Length; i++)
+                            {
+                                using (StreamWriter stream = new StreamWriter(DataBank.pathK, true))
+                                {
+                                    stream.WriteLine(kassets[i]);
+                                }
+                            }
+
+                            if (uses >= 5)
+                            {
+                                MessageBox.Show("Клиент является постоянным \nЦена составит: " + (days) * (price * 0.8) + " с учётом скидки 20% \nВернуть залог в размере " + price * 10);
+                                getMainMenu();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Вернуть клиенту залог в размере " + price * 10 + "\nВозьмите оплату в размере " + price * days);
+                                getMainMenu();
+                            }
+                        }
+
+                        else if (radioButton2.Checked)
+                        {
+                            if (uses >= 5)
+                            {
+                                MessageBox.Show("Клиент является постоянным \nЦена составит: " + (days) * (price * 0.8) + " с учётом скидки 20% \nКассета испорчена, залог не возвращается. ");
+                                getMainMenu();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Кассета испорчена, залог не возвращается. " + "\nВозьмите оплату в размере " + price * days);
+                                getMainMenu();
+                            }
+                        }
+
+                    }
+                }
+
+                else if (!File.Exists(DataBank.pathK))
+                {
+                    MessageBox.Show("Отсутствует каталок кассет!");
+                    getMainMenu();
+                }
+                
+                else if (!File.Exists(DataBank.pathC))
+                {
+                    MessageBox.Show("Отсутствует каталок клиентов!");
+                    getMainMenu();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Укажите состояние кассеты");
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            getMainMenu();
+        }
+
+        private void Rent_in_Load(object sender, EventArgs e)
+        {
+            if (!File.Exists(DataBank.pathR))
+            {
+                MessageBox.Show("Отсутствует каталок сданных в аренду кассет!");
+                getMainMenu();
+            }
+        }
+    }
+}
